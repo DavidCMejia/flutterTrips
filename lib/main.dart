@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: DescriptionPlace(
         "Dubai",
-        4.5,
+        3,
         descriptionDummy,
       ),
       floatingActionButton: FloatingActionButton(
