@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review_list.dart';
+import 'gradient_back.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,15 +41,30 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: DescriptionPlace(
-        "Dubai",
-        3,
-        descriptionDummy,
-      ),
+      // appBar: AppBar(
+      //   title: Text(widget.title),
+      // ),
+      // body: DescriptionPlace(
+      //   "Dubai",
+      //   3,
+      //   descriptionDummy,
+      // ),
       // body: const ReviewList(),
+      body: Stack(
+        children: <Widget>[
+          ListView(
+            children: <Widget>[
+              DescriptionPlace(
+                "Dubai",
+                3,
+                descriptionDummy,
+              ),
+              const ReviewList(),
+            ],
+          ),
+          GradientBack(),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
