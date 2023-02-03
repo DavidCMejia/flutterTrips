@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
-import 'review.dart';
+import 'review_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Davinci Trips'),
     );
   }
 }
@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         3,
         descriptionDummy,
       ),
+      // body: const ReviewList(),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
