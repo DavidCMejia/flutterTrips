@@ -16,7 +16,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final halfStar = Container(
       margin: const EdgeInsets.only(
-        top: 323.0,
+        top: 350.0,
         right: 3.0,
       ),
       child: const Icon(
@@ -26,7 +26,7 @@ class DescriptionPlace extends StatelessWidget {
     );
     final unselectedStar = Container(
       margin: const EdgeInsets.only(
-        top: 323.0,
+        top: 350.0,
         right: 3.0,
       ),
       child: const Icon(
@@ -37,7 +37,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final star = Container(
       margin: const EdgeInsets.only(
-        top: 323.0,
+        top: 350.0,
         right: 3.0,
       ),
       child: const Icon(
@@ -66,7 +66,7 @@ class DescriptionPlace extends StatelessWidget {
     final titleStars = Row(children: <Widget>[
       Container(
         margin: const EdgeInsets.only(
-          top: 320.0,
+          top: 350.0,
           left: 20.0,
           right: 20.0,
         ),
