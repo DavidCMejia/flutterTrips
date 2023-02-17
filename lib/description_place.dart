@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:developer';
 
+import 'package:fluttertest/button_purple.dart';
+
 class DescriptionPlace extends StatelessWidget {
   String descriptionDummy =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. At imperdiet dui accumsan sit amet nulla facilisi morbi. Amet consectetur adipiscing elit duis tristique sollicitudin nibh. Egestas purus viverra accumsan in nisl nisi scelerisque.";
@@ -47,7 +49,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     log('stars: $stars'); // console.log
-    Widget GetStars(double numStars) {
+    Widget getStars(double numStars) {
       List<Widget> rowStars = [];
       int qStars = numStars.round();
       log('qStars: $qStars');
@@ -81,7 +83,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
       Row(
         children: <Widget>[
-          GetStars(stars.toDouble()),
+          getStars(stars.toDouble()),
         ],
       )
     ]);
@@ -105,10 +107,7 @@ class DescriptionPlace extends StatelessWidget {
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        titleStars,
-        description,
-      ],
+      children: <Widget>[titleStars, description, ButtonPurple('Navigate')],
     );
   }
 }

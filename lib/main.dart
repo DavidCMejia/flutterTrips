@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const ReviewList(),
             ],
           ),
-          HeaderAppBar(),
+          const HeaderAppBar(),
         ],
       ),
       floatingActionButton: FloatingActionButton(
