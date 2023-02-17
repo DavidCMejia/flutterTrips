@@ -6,10 +6,10 @@ class CardImageList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 350.0,
+      height: 320.0,
       child: ListView(
         scrollDirection: Axis.horizontal,
-        children: <Widget>[
+        children: const <Widget>[
           CardImage("assets/img/beach.jpeg"),
           CardImage("assets/img/mountain_stars.jpeg"),
           CardImage("assets/img/river.jpeg"),

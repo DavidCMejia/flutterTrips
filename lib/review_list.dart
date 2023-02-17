@@ -9,7 +9,7 @@ class ReviewList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
+      children: const <Widget>[
         Review("assets/img/people3.jpg", "Auronplay", "2 review 4 photos",
             "Pero que ha pasao?!"),
         Review("assets/img/people.jpg", "Chuck Norris", "1 review 5 photos",

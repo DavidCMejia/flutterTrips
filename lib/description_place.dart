@@ -4,13 +4,13 @@ import 'dart:developer';
 import 'package:fluttertest/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
-  String descriptionDummy =
+  final String descriptionDummy =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. At imperdiet dui accumsan sit amet nulla facilisi morbi. Amet consectetur adipiscing elit duis tristique sollicitudin nibh. Egestas purus viverra accumsan in nisl nisi scelerisque.";
-  String namePlace;
-  double stars;
-  String descriptionPlace;
+  final String namePlace;
+  final double stars;
+  final String descriptionPlace;
 
-  DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace,
+  const DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace,
       {super.key});
   @override
   Widget build(BuildContext context) {
@@ -107,7 +107,11 @@ class DescriptionPlace extends StatelessWidget {
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[titleStars, description, ButtonPurple('Navigate')],
+      children: <Widget>[
+        titleStars,
+        description,
+        const ButtonPurple('Navigate')
+      ],
     );
   }
 }
