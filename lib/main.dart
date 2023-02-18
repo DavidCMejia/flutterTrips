@@ -36,26 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {});
   }
 
-  String descriptionDummy =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae et leo duis. At imperdiet dui accumsan sit amet nulla facilisi morbi. Amet consectetur adipiscing elit duis tristique sollicitudin nibh. Egestas purus viverra accumsan in nisl nisi scelerisque.";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          ListView(
-            children: <Widget>[
-              DescriptionPlace(
-                "Dubai",
-                3,
-                descriptionDummy,
-              ),
-              const ReviewList(),
-            ],
-          ),
-          const HeaderAppBar(),
-        ],
-      ),
+      // body:
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
