@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'buttons/floating_action_btn_green.dart';
 
 class CardImage extends StatelessWidget {
   final String pathImage;
@@ -32,18 +33,7 @@ class CardImage extends StatelessWidget {
     );
     return Stack(
       alignment: const Alignment(0.9, 1.1),
-      children: <Widget>[
-        card,
-        FloatingActionButton(
-          mini: true,
-          backgroundColor: Colors.white,
-          onPressed: () {},
-          child: const Icon(
-            Icons.favorite_border,
-            color: Colors.pinkAccent,
-          ),
-        ),
-      ],
+      children: <Widget>[card, const FloatingActionBtnGreen()],
     );
   }
 }

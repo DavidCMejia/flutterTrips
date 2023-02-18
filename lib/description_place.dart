@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:developer';
 
-import 'package:fluttertest/button_purple.dart';
+import 'package:fluttertest/buttons/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   final String descriptionDummy =

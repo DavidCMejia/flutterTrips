@@ -41,15 +41,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text(widget.title),
-      // ),
-      // body: DescriptionPlace(
-      //   "Dubai",
-      //   3,
-      //   descriptionDummy,
-      // ),
-      // body: const ReviewList(),
       body: Stack(
         children: <Widget>[
           ListView(
