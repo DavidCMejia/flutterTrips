@@ -4,25 +4,26 @@ import 'search_trips.dart';
 import 'profile_trips.dart';
 
 class PlatziTrips extends StatefulWidget {
-  PlatziTrips({super.key});
+  const PlatziTrips({super.key});
 
   @override
   State<PlatziTrips> createState() => _PlatziTripsState();
 }
 
-int indexTap = 0;
-
-final List<Widget> widgetsChildren = [
-  const HomeTrips(),
-  const SearchTrips(),
-  const ProfileTrips(),
-];
-
 class _PlatziTripsState extends State<PlatziTrips> {
+  int indexTap = 0;
+
+  final List<Widget> widgetsChildren = [
+    const HomeTrips(),
+    const SearchTrips(),
+    const ProfileTrips(),
+  ];
+
   void onTapTapped(int index) {
     setState(() {
       indexTap = index;
     });
+    // print('indexTap is now: $indexTap');
   }
 
   @override
